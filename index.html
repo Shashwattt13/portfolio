@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashwat Singh - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">SS.</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle">🌙</button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Shashwat Singh</h1>
+            <p class="subtitle">Full Stack Developer & Problem Solver</p>
+            <a href="#projects" class="cta-button">Explore My Work</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" onclick="openModal('codecrafters')">
+                <div class="project-image">💻</div>
+                <h3 class="project-title">Code-Crafters</h3>
+                <p class="project-description">An online collaborative code editor with real-time features and syntax highlighting.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Express.js</span>
+                </div>
+                <a href="#" class="project-link" onclick="event.stopPropagation()">View Details</a>
+            </div>
+
+            <div class="project-card" onclick="openModal('gamify')">
+                <div class="project-image">🎮</div>
+                <h3 class="project-title">Gamify</h3>
+                <p class="project-description">A full-stack gaming platform featuring classic retro games with modern design.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">REST API</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <a href="#" class="project-link" onclick="event.stopPropagation()">View Details</a>
+            </div>
+
+            <div class="project-card" onclick="openModal('visualizer')">
+                <div class="project-image">📊</div>
+                <h3 class="project-title">Algorithm Visualizer</h3>
+                <p class="project-description">Interactive visualization tool for pathfinding and sorting algorithms.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Canvas API</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                </div>
+                <a href="#" class="project-link" onclick="event.stopPropagation()">View Details</a>
+            </div>
+
+            <div class="project-card" onclick="openModal('blockchain')">
+                <div class="project-image">⛓️</div>
+                <h3 class="project-title">Blockchain Explorer</h3>
+                <p class="project-description">A decentralized application built with Ethereum and Polygon integration.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Solidity</span>
+                    <span class="tech-tag">Ethereum</span>
+                    <span class="tech-tag">Polygon</span>
+                    <span class="tech-tag">Web3.js</span>
+                </div>
+                <a href="#" class="project-link" onclick="event.stopPropagation()">View Details</a>
+            </div>
+
+            <div class="project-card" onclick="openModal('ecommerce')">
+                <div class="project-image">🛒</div>
+                <h3 class="project-title">E-Commerce Platform</h3>
+                <p class="project-description">Modern e-commerce solution with payment integration and admin dashboard.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Stripe</span>
+                </div>
+                <a href="#" class="project-link" onclick="event.stopPropagation()">View Details</a>
+            </div>
+
+            <div class="project-card" onclick="openModal('chatapp')">
+                <div class="project-image">💬</div>
+                <h3 class="project-title">Real-Time Chat App</h3>
+                <p class="project-description">Secure messaging application with end-to-end encryption and file sharing.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Socket.io</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">MongoDB</span>
+                </div>
+                <a href="#" class="project-link" onclick="event.stopPropagation()">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="name-error">Name is required</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="email-error">Please enter a valid Gmail address</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <div class="error-message" id="message-error">Message is required</div>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+                
+                <div class="success-message" id="success-message">
+                    Thank you for your message! I'll get back to you soon. 🚀
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="mailto:shashwatsingh.6912@gmail.com">Email</a>
+            <a href="https://linkedin.com/in/shashwat-singh" target="_blank">LinkedIn</a>
+            <a href="https://github.com/shashwat-singh" target="_blank">GitHub</a>
+        </div>
+        <p>&copy; 2025 Shashwat Singh. Crafted with passion and code.</p>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="codecrafters-modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('codecrafters')">&times;</button>
+            <h2>Code-Crafters - Collaborative Code Editor</h2>
+            <div class="project-image" style="margin: 1rem 0;">💻</div>
+            <p><strong>Overview:</strong> Code-Crafters is a revolutionary online code editor that enables real-time collaboration between developers. Built with modern web technologies, it provides a seamless coding experience with advanced features like syntax highlighting, auto-completion, and live code sharing.</p>
+            
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Real-time collaborative editing with multiple users</li>
+                <li>Advanced syntax highlighting for 20+ programming languages</li>
+                <li>Integrated terminal and file management system</li>
+                <li>Version control integration with Git</li>
+                <li>Live code execution and debugging tools</li>
+                <li>Customizable themes and editor preferences</li>
+            </ul>
+            
+            <h3>Technical Stack:</h3>
+            <p>Frontend: React.js with hooks, Context API for state management, and responsive CSS Grid layouts. Backend: Node.js with Express.js framework, Socket.io for real-time communication, and MongoDB for data persistence.</p>
+            
+            <h3>Challenges Solved:</h3>
+            <p>Implemented conflict resolution algorithms for simultaneous edits, optimized real-time synchronization to handle 100+ concurrent users, and built a secure authentication system with JWT tokens.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="gamify-modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('gamify')">&times;</button>
+            <h2>Gamify - Gaming Platform</h2>
+            <div class="project-image" style="margin: 1rem 0;">🎮</div>
+            <p><strong>Overview:</strong> Gamify is a comprehensive gaming platform that brings classic arcade games to modern web browsers. The platform features a collection of carefully crafted retro games with contemporary design principles and smooth gameplay mechanics.</p>
+            
+            <h3>Game Collection:</h3>
+            <ul>
+                <li>Snake Game with progressive difficulty levels</li>
+                <li>Tetris with modern controls and scoring system</li>
+                <li>Pac-Man inspired maze adventure</li>
+                <li>Space Invaders with power-ups and bonuses</li>
+                <li>Pong with AI opponents of varying difficulty</li>
+            </ul>
+            
+            <h3>Platform Features:</h3>
+            <ul>
+                <li>User profiles with achievement tracking</li>
+                <li>Global leaderboards and competition system</li>
+                <li>Social features including friend challenges</li>
+                <li>Mobile-responsive design for all devices</li>
+                <li>Progressive Web App (PWA) capabilities</li>
+            </ul>
+            
+            <h3>Technical Implementation:</h3>
+            <p>Built with React for the frontend providing smooth animations and state management. Django REST API backend handles user authentication, game statistics, and leaderboard data. Implemented WebSocket connections for real-time multiplayer features.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="visualizer-modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('visualizer')">&times;</button>
+            <h2>Algorithm Visualizer</h2>
+            <div class="project-image" style="margin: 1rem 0;">📊</div>
+            <p><strong>Overview:</strong> An interactive educational tool that transforms complex algorithms into visual experiences. This project helps students and developers understand algorithmic concepts through step-by-step animations and real-time visualization.</p>
+            
+            <h3>Supported Algorithms:</h3>
+            <ul>
+                <li><strong>Pathfinding:</strong> A*, Dijkstra's, BFS, DFS with maze generation</li>
+                <li><strong>Sorting:</strong> Quick Sort, Merge Sort, Bubble Sort, Heap Sort</li>
+                <li><strong>Graph Algorithms:</strong> Minimum Spanning Tree, Topological Sort</li>
+                <li><strong>Data Structures:</strong> Binary Trees, Hash Tables, Stack/Queue operations</li>
+            </ul>
+            
+            <h3>Interactive Features:</h3>
+            <ul>
+                <li>Adjustable animation speed and step-by-step execution</li>
+                <li>Custom data input and algorithm parameter tuning</li>
+                <li>Performance metrics and complexity analysis</li>
+                <li>Code snippets with highlighted execution lines</li>
+                <li>Comparison mode for multiple algorithms</li>
+            </ul>
+            
+            <h3>Educational Impact:</h3>
+            <p>Used by 500+ computer science students to better understand algorithmic concepts. Features comprehensive explanations, time/space complexity analysis, and practical applications for each algorithm.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="blockchain-modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('blockchain')">&times;</button>
+            <h2>Blockchain Explorer DApp</h2>
+            <div class="project-image" style="margin: 1rem 0;">⛓️</div>
+            <p><strong>Overview:</strong> A sophisticated decentralized application that provides comprehensive blockchain exploration capabilities. Built on Ethereum and Polygon networks, this DApp offers real-time transaction tracking, smart contract interaction, and detailed network analytics.</p>
+            
+            <h3>Core Features:</h3>
+            <ul>
+                <li>Real-time transaction monitoring and analysis</li>
+                <li>Smart contract deployment and interaction interface</li>
+                <li>Multi-network support (Ethereum, Polygon, BSC)</li>
+                <li>Advanced search and filtering capabilities</li>
+                <li>Wallet integration with MetaMask and WalletConnect</li>
+                <li>Gas fee optimization and tracking tools</li>
+            </ul>
+            
+            <h3>Technical Architecture:</h3>
+            <ul>
+                <li>Smart contracts written in Solidity with security best practices</li>
+                <li>Web3.js integration for blockchain interactions</li>
+                <li>IPFS integration for decentralized data storage</li>
+                <li>GraphQL APIs for efficient data querying</li>
+                <li>Progressive Web App with offline capabilities</li>
+            </ul>
+            
+            <h3>Security & Performance:</h3>
+            <p>Implements industry-standard security practices including contract auditing, input validation, and secure key management. Optimized for low gas consumption with efficient smart contract patterns and batched transactions.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="ecommerce-modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('ecommerce')">&times;</button>
+            <h2>E-Commerce Platform</h2>
+            <div class="project-image" style="margin: 1rem 0;">🛒</div>
+            <p><strong>Overview:</strong> A comprehensive e-commerce solution built with modern web technologies. Features a complete shopping experience with advanced product management, secure payment processing, and powerful admin tools.</p>
+            
+            <h3>Customer Features:</h3>
+            <ul>
+                <li>Intuitive product browsing with advanced filters</li>
+                <li>Secure shopping cart and wishlist functionality</li>
+                <li>Multiple payment options (Stripe, PayPal, Crypto)</li>
+                <li>Order tracking and history management</li>
+                <li>User reviews and rating system</li>
+                <li>Responsive design for all devices</li>
+            </ul>
+            
+            <h3>Admin Dashboard:</h3>
+            <ul>
+                <li>Comprehensive product and inventory management</li>
+                <li>Real-time sales analytics and reporting</li>
+                <li>Customer management and support tools</li>
+                <li>Order processing and fulfillment system</li>
+                <li>Marketing tools and discount management</li>
+            </ul>
+            
+            <h3>Technical Excellence:</h3>
+            <p>Built with Next.js for optimal performance and SEO. Implements server-side rendering, API routes, and static generation. MySQL database with optimized queries and Redis caching for improved performance.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="chatapp-modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('chatapp')">&times;</button>
+            <h2>Real-Time Chat Application</h2>
+            <div class="project-image" style="margin: 1rem 0;">💬</div>
+            <p><strong>Overview:</strong> A secure, real-time messaging application that prioritizes user privacy and seamless communication. Built with modern web technologies to provide instant messaging, file sharing, and group chat capabilities.</p>
+            
+            <h3>Core Features:</h3>
+            <ul>
+                <li>End-to-end encryption for secure messaging</li>
+                <li>Real-time message delivery with read receipts</li>
+                <li>File sharing with drag-and-drop interface</li>
+                <li>Group chats with admin controls</li>
+                <li>Voice and video calling integration</li>
+                <li>Message search and conversation history</li>
+            </ul>
+            
+            <h3>Advanced Capabilities:</h3>
+            <ul>
+                <li>Message reactions and emoji support</li>
+                <li>Custom themes and chat backgrounds</li>
+                <li>Push notifications across devices</li>
+                <li>Offline message queuing and sync</li>
+                <li>User presence indicators and typing status</li>
+                <li>Message editing and deletion with timestamps</li>
+            </ul>
+            
+            <h3>Security & Privacy:</h3>
+            <p>Implements AES-256 encryption, secure key exchange protocols, and privacy-first design principles. All messages are encrypted client-side before transmission, ensuring maximum security.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

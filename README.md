@@ -27,7 +27,7 @@ git clone https: https://shashwattt13.github.io/portfolio/
 2. **Navigate to the project folder**
 
 ```bash
-cd your-repo-name
+cd portfolio
 ```
 
 3. **Open `index.html` in your browser**
@@ -63,7 +63,7 @@ cd your-repo-name
 ## Next Steps
 
 * Add more projects as I build them
-* Integrate APIs for bonus points (like coding quotes)
+* Integrate APIs (like coding quotes)
 * Enhance animations and UI for better user experience
 
 ---
@@ -72,8 +72,6 @@ cd your-repo-name
 
 Feel free to explore the code, suggest improvements, or just say hi! 🚀
 
-* **GitHub:**  https://shashwattt13.github.io/portfolio/
+* **GitHub:**  https://github.com/Shashwattt13
 * **Live Portfolio:** https://68ba0203f7a56300a1521a44--shashportf.netlify.app/
 
-Do you want me to make a **short, super neat one-page version** for assessment reviewers as well?
-```

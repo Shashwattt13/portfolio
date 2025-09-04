@@ -3,7 +3,7 @@
 Hi there! 👋  
 Welcome to my portfolio website, where I showcase my projects, skills, and everything I’ve been working on as a developer.
 
-**Live Site:** [https://shashwat.netlify.app](https://shashwat.netlify.app)
+**Live Site:** [https://shashwat.netlify.app](https://68ba0203f7a56300a1521a44--shashportf.netlify.app/)
 
 ---
 
@@ -21,7 +21,7 @@ Welcome to my portfolio website, where I showcase my projects, skills, and every
 
 1. **Clone the repository**  
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https: https://shashwattt13.github.io/portfolio/
 ````
 
 2. **Navigate to the project folder**

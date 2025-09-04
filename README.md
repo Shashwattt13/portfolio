@@ -1,6 +1,3 @@
-Got it! Here’s a **direct copy-paste-ready `README.md`** file — everything in one block, clean Markdown, no extra notes:
-
-````markdown
 # Shashwat's Portfolio Website
 
 Hi there! 👋  

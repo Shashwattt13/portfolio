@@ -3,7 +3,7 @@
 Hi there! 👋  
 Welcome to my portfolio website, where I showcase my projects, skills, and everything I’ve been working on as a developer.
 
-**Live Site:** [https://shashwat.netlify.app](https://68ba0203f7a56300a1521a44--shashportf.netlify.app/)
+**Live Site:** https://shashwatportf.netlify.app/
 
 ---
 
@@ -73,5 +73,4 @@ cd portfolio
 Feel free to explore the code, suggest improvements, or just say hi! 🚀
 
 * **GitHub:**  https://github.com/Shashwattt13
-* **Live Portfolio:** https://68ba0203f7a56300a1521a44--shashportf.netlify.app/
-
+* **Live Portfolio:** https://shashwatportf.netlify.app/

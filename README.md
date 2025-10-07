@@ -11,7 +11,7 @@ Welcome to my portfolio website, where I showcase my projects, skills, and every
 
 - **HTML5** – Structure of the website  
 - **CSS3** – Styling and responsive design  
-- **JavaScript** – Interactivity and dynamic content  
+- **JavaScript** – Interactivity and dynamic content 
 - **Git & GitHub** – Version control and code management  
 - **Netlify** – Deployment and live hosting  
 
